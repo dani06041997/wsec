@@ -1,0 +1,229 @@
+/*body {
+  padding-bottom: 40px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}*/
+.page-header {
+  margin-top: 0;
+}
+h5 {
+  font-weight: bold;
+}
+/*.popover {
+  padding: 0;
+}
+.popover h3.popover-title {
+  font-weight: bold;
+  text-align: center;
+  background-color: #fbf900;
+}
+.popover.bottom > .arrow:after {
+  border-bottom-color: #fbf900;
+}
+.popover .popover-content {
+  margin-bottom: 12px;
+}
+.popover .popover-content h5 {
+  margin-bottom: 5px;
+}*/
+#map {
+  width: 1100px;
+  margin: 10px auto 0;
+}
+#map:before,
+#map:after {
+  content: " ";
+  display: table;
+}
+#map:after {
+  clear: both;
+}
+#map #kab-bojonegoro {
+  /*float: right;*/
+  margin-top: 30px;
+  width: 800px;
+  height: 100%;
+  max-width: 100%;
+}
+#map #kab-bojonegoro [id^="kec-"] {
+  cursor: pointer;
+}
+#map #kab-bojonegoro [id^="kec-"] .shape {
+  /*stroke: #300;
+  stroke-width: 10;*/
+  stroke-linejoin: round;
+}
+#map #kab-bojonegoro #water path {
+  stroke: #77f;
+  stroke-width: 1;
+  stroke-linejoin: round;
+}
+/*#map .meta {
+  float: left;
+  width: 280px;
+  position: relative;
+}
+#map .meta > div + div {
+  margin-top: 20px;
+}
+#map .meta .block-group {
+  position: relative;
+}
+#map .meta .block-group .block-item {
+  display: block;
+  position: relative;
+  margin-top: 20px;
+  padding-top: 12px;
+  padding-bottom: 15px;
+  border-radius: 8px;
+  color: #111;
+  text-align: right;
+}
+#map .meta .block-group .block-item .value {
+  font-weight: bold;
+  font-size: 2.875em;
+  position: absolute;
+  top: 4px;
+  right: 15px;
+}
+#map .meta .block-group .total {
+  background-color: #fcb004;
+}
+#map .meta .block-group .max {
+  background-color: #06affb;
+}
+#map .meta .block-group .rawan {
+  text-align: left;
+  position: absolute;
+  top: 0;
+  right: -185px;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin-top: 0;
+  background-color: #5ea79f;
+}
+#map .meta .btn-group .btn .fa {
+  display: none;
+  margin-right: 5px;
+}
+#map .meta .btn-group .btn.active .fa {
+  display: inline-block;
+}
+#map .meta .gktm {
+  width: 100%;
+}
+#map .meta .gktm .btn .selected-option {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+}
+#map .meta .gktm .btn .caret {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  margin-top: -2px;
+  vertical-align: middle;
+}
+#map .meta .gktm .dropdown-menu {
+  width: 100%;
+}
+#map .meta .gktm .dropdown-menu li a {
+  cursor: pointer;
+  position: relative;
+}
+#map .meta .gktm .dropdown-menu li a.selected:after {
+  content: '\f00c';
+  font-family: FontAwesome;
+  position: absolute;
+  top: 2px;
+  right: 1em;
+}
+#map .meta .gktm .dropdown-submenu {
+  position: relative;
+}
+#map .meta .gktm .dropdown-submenu.open {
+  background-color: #F5F5F5;
+}
+#map .meta .gktm .dropdown-submenu > a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 4px 0 4px 4px;
+  border-left-color: #333;
+  margin-top: 6px;
+  margin-right: -10px;
+}
+#map .meta .gktm .dropdown-submenu .dropdown-menu.wrap {
+  position: absolute;
+  left: 100%;
+  width: 600px;
+  overflow: hidden;
+}
+#map .meta .gktm .dropdown-submenu .dropdown-menu.wrap.krim {
+  top: -528px;
+  height: 560px;
+}
+#map .meta .gktm .dropdown-submenu .dropdown-menu.wrap.nonkrim {
+  top: -573px;
+  height: 603px;
+}
+#map .meta .gktm .dropdown-submenu .dropdown-menu.wrap .dropdown-menu {
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}*/
+#map .scale {
+  position: absolute;
+  top: 520px;
+  left: 40px;
+  width: 120px;
+  height: 16px;
+  border: 1px solid #000;
+}
+#map .scale span {
+  position: absolute;
+  top: -16px;
+  font-weight: bold;
+  font-size: .625em;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#map .scale span.min {
+  left: 0;
+}
+#map .scale span.max {
+  right: 0;
+  text-align: right;
+}
+
+#map-selector {
+  padding: 0 20px;
+}
+
+#map-selector label {
+  color: #fff;
+  font-weight: bold;
+}
+
+#map-selector select {
+  padding: 6px;
+}

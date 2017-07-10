@@ -1,0 +1,85 @@
+	/** ADMIN gallery*/
+	
+	function admin_gallery(){
+		$data['partials']['header'] = $this->load->view('admin/header', null, true);
+		$data['gallery'] = $this->usermodel_gallery->all();
+		$this->load->view('admin/admin_gallery',$data);
+
+				
+	}
+	
+	public function add_admin_gallery()
+	{
+		
+		$this->form_validation->set_rules('nama_devisi', 'nama_devisi', 'required');
+		
+		
+		$this->form_validation->set_error_delimiters('<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button>', '</div>');
+		if ($this->form_validation->run() == FALSE)
+		{
+		
+		$this->load->view('admin/admin_gallery');
+		} else {
+				/*start upload gambar*/
+				$new_file_name = rand(100000,999999); 
+				$config['upload_path']          = './library/images/gallery/';
+                $config['allowed_types']        = 'jpg';
+				$config['file_name'] 			= $new_file_name;
+
+                $this->load->library('upload', $config);
+
+                if ( ! $this->upload->do_upload())
+                {
+					echo $this->upload->display_errors();
+                }
+                else
+                {
+					/*end upload gambar*/
+					/*start save ke database*/
+                    $data = array(			
+				
+					'nama_devisi'=>$this->input->post('nama_devisi'),
+					'gambar'=>$new_file_name.'.jpg'
+					);
+					$this->usermodel_gallery->add($data);
+					/*end save ke database*/
+					redirect('welcome/admin_gallery');
+                }
+		} 
+	}
+	
+	public function update_admin_gallery()
+	{
+		$id = $this->input->post('id');
+		
+		$this->form_validation->set_rules('nama_devisi', 'nama_devisi', 'required');
+		
+		$this->form_validation->set_error_delimiters('<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button>', '</div>');
+		if ($this->form_validation->run() == FALSE)
+		{
+		
+		$this->load->view('admin/admin_gallery');
+		} else {
+		$new_file_name = rand(100000,999999); 
+				$config['upload_path']          = './library/images/gallery/';
+                $config['allowed_types']        = 'jpg|png';
+				$config['file_name'] 			= $new_file_name;
+		$this->load->library('upload', $config);
+		$this->upload->do_upload('gambar');
+		$data = array(			
+
+		'nama_devisi'=>$this->input->post('nama_devisi'),
+		'gambar'=>$new_file_name.".jpg"
+		);
+		$this->usermodel_gallery->edit($id,$data);
+		redirect('welcome/admin_gallery');
+		}
+	}
+	
+	public function delete_admin_gallery(){
+		$id = $this->uri->segment(3);
+
+		$this->usermodel_gallery->delete($id);
+		redirect('welcome/admin_gallery');
+		
+	} 

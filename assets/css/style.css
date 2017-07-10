@@ -1,0 +1,150 @@
+html,body{
+    margin:0;
+    height:100%;
+    
+}
+
+				/*background:#DE3F21;*/
+			}
+			
+			#home_profile{
+				font-family:"Josefin Sans";
+				width:600px;
+				height:100%;
+				padding:20px;
+				background-color:#s3ab5d7;
+				
+				}
+			  #home_profile h2{
+				  font-family:"Josefin Sans";
+				  color:#bd493c;
+				  
+				  
+				  }	
+			.gambar_profile{
+				
+				width:714px;
+				height:200px;
+				margin-top:100px;
+				}
+			  .tulisan_profile{
+				 color:#FFF;
+				 font-size:16px;
+				  
+				  }
+			  #link_profile{
+				 text-decoration:none;
+				 border:1px solid #bd493c ;
+				 padding:10px; 
+				 margin-left:470px;
+				 color:#bd493c;
+				 
+				  }	  
+				#link_profile:hover{
+					background-color:#bd493c;
+					color:#FFF;
+					
+					} 
+				#isi{
+					background-color:#fcda3b;
+					margin-top:-14px;
+					height:350px;
+					
+					}
+				#kesenian{
+					background-color:#f98a39;
+					padding:20px;
+					padding-top:0px;
+					height:270px;
+					padding-right:0px;
+					
+					}
+				.ket_kesenian{
+					font-family:"Josefin Sans";
+					width:700px;
+					float:left;
+					color:#805823;
+					
+					}
+				.judul_kesenian{
+					float:right;
+					width:600px;
+					
+					height:290px;
+					}
+				#conten_kesenian{
+					background-color:#007095;
+					/*background-color:#FFA87D;*/
+					height:540px;
+					padding-bottom:50px;
+					
+					
+					}
+				.seni{
+					width:268px;
+					height:211px;
+					background-color:#FC3;
+					padding-top:10px;
+					float:left;
+					margin-left:100px;
+					}
+				.cap_seni{
+					background-color:#e9e8e3;
+					padding:20px;
+					margin-top:-30px;
+					font-family:"Josefin Sans";
+					}
+					
+				#profile{
+					background-color:#007095;
+					padding:20px;
+					padding-top:0px;
+					height:270px;
+					padding-right:0px;
+					
+					
+					}
+				.ket_profile{
+					font-family:"Josefin Sans";
+					width:700px;
+					color:#FFF;
+					
+					}
+				.wadah_profile{
+					width:700px;
+					background-color:#FFF;
+					float:right;
+					height:200px;
+					padding:20px;
+					font-family:"Josefin Sans";
+					
+					}
+				 .con_profile{
+					background:#FFF; 
+					float:left;
+					
+					 }
+					 
+				#about{
+					margin-top:0px;
+					background-color:#95CAFF;
+					padding:20px;
+					font-family:"Josefin Sans";
+					}
+					
+				.ket_about{
+					width:700px;
+					color:#004A95;
+					
+					}
+				#footer{
+					
+					background-color:#102e48;
+					height:55px;
+					padding:10px;
+					font-family:"Josefin Sans";
+					}
+					
+				
+				
+				

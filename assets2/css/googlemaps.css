@@ -1,0 +1,22 @@
+#maps-wrapper {    
+    padding: 20px 20px 0;
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+}
+#maps-wrapper .maps {
+    border: 5px 5px 5px 5px;
+    width: 70%;
+    height: 500px;
+    float: left;
+    border: 5px solid #2C78B9;
+}
+
+#maps-wrapper .info {
+    width: 30%;
+    min-height: 500px;
+    overvlow-y: scroll;
+    margin-left: 70%;
+    padding-left: 30px;
+	
+}
